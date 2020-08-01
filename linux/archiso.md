@@ -1,8 +1,8 @@
 ---
-title: Dasyatis 的 Arch Linux 安装镜像
+title: Customized Arch Linux Installation Image
 description: 
 published: true
-date: 2020-08-01T03:07:02.106Z
+date: 2020-08-01T03:11:03.988Z
 tags: linux, archlinux, archiso
 editor: markdown
 ---
