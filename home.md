@@ -2,19 +2,21 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T12:45:45.310Z
+date: 2020-08-01T12:50:28.788Z
 tags: 
 editor: markdown
 ---
 
 <center>
 
+
+
 <img src="https://bobby285271.coding.net/p/img/d/img/git/raw/master/login1.jpg" width=100%>
 
-  >  <font size="5px">欢迎访问 Dasyatis 的个人小站</font>
-{.is-success}
+  >  <font size="4px">欢迎访问 Dasyatis 的个人小站</font>
+{.is-info}
 
-
+</center>
 
 
 
