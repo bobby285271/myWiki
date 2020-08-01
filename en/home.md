@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T15:50:13.085Z
+date: 2020-08-01T15:50:24.133Z
 tags: 
 editor: markdown
 ---
@@ -20,7 +20,7 @@ Welcome to my personal blog! You may notice that **the blog is driven by Wiki.js
 
 **Unfortunately**, most of my posts are only available in Chinese, and you have to change your preferred language to Chinese and use a translator to view those posts. Sorry for your inconvenience.
 
-A brief self introduction here. I am **Jialin Rong** (bobby285271). Currently I am learning software engineering in South China Normal University. I am interested in the open-source world, especially thost cool stuff related to linux, networking, servers, sysadmin, virtualization and devops. Feel free to talk to me about linux, software, programming and algorithm. Here is my GitHub / Codeforces account.
+A brief self introduction here. I am **Jialin Rong** (bobby285271). Currently I am learning software engineering in South China Normal University. I am interested in the open-source world, especially those cool stuff related to linux, networking, servers, sysadmin, virtualization and devops. Feel free to talk to me about linux, software, programming and algorithm. Here is my GitHub / Codeforces account.
 
 
 [![](https://img.shields.io/badge/bobby285271-GitHub-green?logo=github&style=for-the-badge)](https://github.com/bobby285271) [![](https://cfrating.ihcr.top/?user=bobby285271)](https://codeforces.com/profile/bobby285271)
