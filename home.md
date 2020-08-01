@@ -2,12 +2,12 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T03:32:20.257Z
+date: 2020-08-01T03:41:03.116Z
 tags: 
 editor: markdown
 ---
 
-
+![](https://bobby285271.coding.net/p/img/d/img/git/raw/master/login.jpg)
 
 **容加林**（bobby285271），[华南师范大学](https://www.scnu.edu.cn/)（软件工程）本科 2019 级（准大二）学生。
 
@@ -26,5 +26,3 @@ editor: markdown
 ----
 
 本站运行于 **Arch Linux**，由 **Wiki.js** 驱动，由 **Vultr** 托管。
-
-![](https://tva4.sinaimg.cn/large/9bd9b167ly1fwsfucs1hrj21hc0u01kx.jpg)
