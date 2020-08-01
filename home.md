@@ -2,12 +2,12 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T03:24:51.122Z
+date: 2020-08-01T03:25:16.544Z
 tags: 
 editor: markdown
 ---
 
-![](https://tva4.sinaimg.cn/large/9bd9b167ly1fwsfucs1hrj21hc0u01kx.jpg)
+
 
 **容加林**（bobby285271），[华南师范大学](https://www.scnu.edu.cn/)（软件工程）本科 2019 级（准大二）学生。
 
@@ -18,6 +18,8 @@ editor: markdown
 请随意浏览这个站点，欢迎您随时和我交流 Linux、软件、编程和算法，也欢迎您 follow / star 本蒟蒻的 GitHub 和 Codeforces 帐号：
 
 [![](https://img.shields.io/badge/bobby285271-GitHub-green?logo=github&style=for-the-badge)](https://github.com/bobby285271) [![](https://cfrating.ihcr.top/?user=bobby285271)](https://codeforces.com/profile/bobby285271)
+
+![](https://tva4.sinaimg.cn/large/9bd9b167ly1fwsfucs1hrj21hc0u01kx.jpg)
 
 关于本站
 ----
