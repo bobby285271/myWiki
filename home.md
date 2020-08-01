@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T03:25:16.544Z
+date: 2020-08-01T03:32:20.257Z
 tags: 
 editor: markdown
 ---
@@ -19,9 +19,12 @@ editor: markdown
 
 [![](https://img.shields.io/badge/bobby285271-GitHub-green?logo=github&style=for-the-badge)](https://github.com/bobby285271) [![](https://cfrating.ihcr.top/?user=bobby285271)](https://codeforces.com/profile/bobby285271)
 
-![](https://tva4.sinaimg.cn/large/9bd9b167ly1fwsfucs1hrj21hc0u01kx.jpg)
+
+
 
 关于本站
 ----
 
-本站运行于 **Arch Linux**，由 **NGINX + Typecho** 驱动，由 **Vultr** 托管。**本站所有文章均为本人原创文章**，转载请保留原文地址，著作权归作者所有。
+本站运行于 **Arch Linux**，由 **Wiki.js** 驱动，由 **Vultr** 托管。
+
+![](https://tva4.sinaimg.cn/large/9bd9b167ly1fwsfucs1hrj21hc0u01kx.jpg)
