@@ -2,7 +2,7 @@
 title: Dasyatis 的 Arch Linux 安装镜像
 description: 
 published: true
-date: 2020-08-01T03:05:22.934Z
+date: 2020-08-01T03:07:02.106Z
 tags: linux, archlinux, archiso
 editor: markdown
 ---
@@ -16,11 +16,11 @@ XFCE 桌面环境、Fcitx 输入法框架、Firefox 浏览器、Xed 文本编辑
 [构建日期与校验码](https://www.bobby285271.top/archiso/lastbuild.txt) / [软件包列表](https://www.bobby285271.top/archiso/pkglist.x86_64.txt)
 
 ### 常见问题
-* **Q: 用户账户和密码是？**
-* **A：**普通用户账户为 `live`，密码为 `live`。管理员账户为 `root`，密码为 `root`。
+* **Q： 用户账户和密码是？**
+* **A：** 普通用户账户为 `live`，密码为 `live`。管理员账户为 `root`，密码为 `root`。
 
-* **Q：怎样使用这个镜像安装 Arch Linux？**
-* **A：**你仍然需要按照 [ArchWiki 安装指南](https://wiki.archlinux.org/index.php/Installation_guide) 的说明，使用命令行完成安装。然而合理利用这个镜像提供的应用程序将会有效地减少你的输入量，并助你更快地完成连接互联网和磁盘分区的工作。如果你需要图形化安装程序，可以考虑自行移植 Calamares 或选用其它发行版。
+* **Q： 怎样使用这个镜像安装 Arch Linux？**
+* **A：** 你仍然需要按照 [ArchWiki 安装指南](https://wiki.archlinux.org/index.php/Installation_guide) 的说明，使用命令行完成安装。然而合理利用这个镜像提供的应用程序将会有效地减少你的输入量，并助你更快地完成连接互联网和磁盘分区的工作。如果你需要图形化安装程序，可以考虑自行移植 Calamares 或选用其它发行版。
 
 ### 公告
 * 配置档已经基于 `archiso 45-1` 重新制作，相比旧版配置档有多处变动，[请前往这里了解详情](https://github.com/bobby285271/Archiso/pull/1/files)，7 月 9 日起我们将使用新的配置档构建镜像。
