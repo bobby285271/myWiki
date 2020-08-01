@@ -2,12 +2,13 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-01T12:33:17.201Z
+date: 2020-08-01T12:35:45.014Z
 tags: 
 editor: markdown
 ---
 
-![](https://bobby285271.coding.net/p/img/d/img/git/raw/master/login1.jpg)
+
+<center><img src="https://bobby285271.coding.net/p/img/d/img/git/raw/master/login1.jpg" width=80%></center>
 
 **容加林**（bobby285271），[华南师范大学](https://www.scnu.edu.cn/)（软件工程）本科 2019 级（准大二）学生。
 
