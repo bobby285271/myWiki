@@ -2,8 +2,8 @@
 title: Introduction to Django - Illustrated by the Example of SCNUSE SoCoding 1024 Website
 description: 
 published: true
-date: 2020-08-01T01:58:38.892Z
-tags: 
+date: 2020-08-01T02:09:43.780Z
+tags: web
 editor: markdown
 ---
 
