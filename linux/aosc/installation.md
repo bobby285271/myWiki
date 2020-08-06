@@ -1,11 +1,13 @@
 ---
-title: AOSC OS 安装
+title: AOSC OS Installation Guide (Lite)
 description: 
 published: true
-date: 2020-08-06T11:41:32.374Z
+date: 2020-08-06T11:42:48.346Z
 tags: guide, linux, installation, aosc
 editor: markdown
 ---
+
+给自己看的 AOSC OS 安装指南，参考：https://wiki.aosc.io/en/sys-installation-amd64
 
 ## 安装前准备
 
