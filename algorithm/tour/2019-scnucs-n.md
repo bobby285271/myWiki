@@ -2,13 +2,13 @@
 title: SCNUCS-N 2019 Tour
 description: 
 published: true
-date: 2020-08-01T02:52:23.696Z
+date: 2020-08-06T12:00:04.852Z
 tags: scnu, contest, acm, scnucs-n, tour
 editor: markdown
 ---
 
 ## 初赛
-> 去临时的 OJ 用临时的帐号打临时的比赛（误）感觉有点奇怪，把题目存了一份：`https://pan.baidu.com/s/1tLYZA2ssDN2lCqiZWqMGqQ`，提取码 `jnq2`。
+> 题面 `https://pan.baidu.com/s/1tLYZA2ssDN2lCqiZWqMGqQ` 提取码 `jnq2`。
 
 ![](https://bobby285271.coding.net/p/img/d/img/git/raw/master/scnuacm19.png)
 
@@ -31,7 +31,7 @@ C 语言老师那边丧心病狂地周四周五连续上了八节课，于是~~�
 
 比赛当天十点就出发拉到石牌校区了，看时间好像还早就跟着 PYY 去天河城玩去了，靠复印模板还骗到了一顿饭确实香。结果~~因为校园太大我又路痴~~还是差点迟到（~~吹一波南海校区麻雀虽小但五脏俱全~~）。计科居然还有专门的 ACM 实验室，~~但比赛现场的机子也确实该升级了，甚至还跑着 Windows XP 系统（没记错的话）~~。
 
-> 题面 PDF 存档：`https://pan.baidu.com/s/1CyhXu-0SZ7axguL64xTcwQ`（提取码 `4ckt`）。
+> 题面 `https://pan.baidu.com/s/1CyhXu-0SZ7axguL64xTcwQ` 提取码 `4ckt`。
 
 比赛开始前一分钟拿到题面，照例先看 A 题，10 的 100 次方？高精乘除法警告，下一题下一题。相比之下 B 题好像友好很多，差点忘记 d 整除 a 到底是 `d % a == 0` 还是 `a % d == 0` 全靠样例解释（不过如果真是前者还做个屁啊）。又是 GCD，交了一发 TLE 开始慌了，马上看榜发现计科已经有人过掉三题了迅速开启根榜模式。发现 J 和 L 题都是良心签到就去秒掉了。然后跑去看 E 题，马上跑去打了个表，我居然从 `P == 1` 一直打到 `P == 63`，等了一会不耐烦回到 B 题想起初赛时的 A 题我犯的错误好像一模一样，赶紧开个根号优化一下也过了。表打出来才发现 P 是素数于是又把打出来的数加一 `log2` 算了一发瞪眼判断是不是素数，筛掉不是的就将题目过了（~~讲完题解才发现**打个屁的表啊**题面上都有了~~）。
 
