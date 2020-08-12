@@ -2,7 +2,7 @@
 title: Introduction to Linux OS
 description: 
 published: true
-date: 2020-08-12T12:41:49.220Z
+date: 2020-08-12T12:41:54.802Z
 tags: linux, operating-system, kernel
 editor: markdown
 ---
