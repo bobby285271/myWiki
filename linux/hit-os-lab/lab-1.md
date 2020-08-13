@@ -1,8 +1,8 @@
 ---
-title: HIT Operating System: Lab 1 Writeup
+title: HIT Operating System Course: Lab 1 Writeup
 description: 
 published: true
-date: 2020-08-13T11:47:54.124Z
+date: 2020-08-13T11:48:22.947Z
 tags: linux, operating-system, lab
 editor: markdown
 ---
