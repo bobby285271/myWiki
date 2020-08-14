@@ -2,12 +2,12 @@
 title: HIT Operating System Course: Lab 1 Writeup
 description: 
 published: true
-date: 2020-08-14T03:35:46.451Z
+date: 2020-08-14T03:36:07.076Z
 tags: linux, operating-system, lab, hit-os-lab
 editor: markdown
 ---
 
-## Lab 1 起始课
+# Lab 1 起始课
 
 希望在本地实验，使用了 [tinylab](http://tinylab.org/build-linux-0-11-lab-with-docker/)。
 
