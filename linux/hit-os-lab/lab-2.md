@@ -2,7 +2,7 @@
 title: HIT Operating System Course: Lab 2 Writeup
 description: 
 published: true
-date: 2020-08-14T08:20:45.188Z
+date: 2020-08-14T14:31:22.039Z
 tags: linux, operating-system, lab, hit-os-lab
 editor: markdown
 ---
@@ -39,3 +39,8 @@ msg1:
 
 ## 裁剪 bootsect
 
+
+
+## Key
+
+https://blog.csdn.net/wangjianyu0115/article/details/46853093
