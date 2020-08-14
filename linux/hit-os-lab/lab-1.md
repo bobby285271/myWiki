@@ -2,35 +2,45 @@
 title: HIT Operating System Course: Lab 1 Writeup
 description: 
 published: true
-date: 2020-08-14T03:03:35.855Z
+date: 2020-08-14T03:35:46.451Z
 tags: linux, operating-system, lab, hit-os-lab
 editor: markdown
 ---
 
 ## Lab 1 起始课
 
-bochs：x86 PC 机模拟器。
+希望在本地实验，使用了 [tinylab](http://tinylab.org/build-linux-0-11-lab-with-docker/)。
 
-解压实验包：
-
-```
-tar -zxvf hit-oslab-linux-20110823.tar.gz
-```
-
-编译内核：
+克隆实验环境：
 
 ```
-make clean #optional，删除上次编译生成的中间文件和目标文件
-cd linux-0.11
-make all #会自动跳过未修改的文件， -j 参数并行编译（如 -j 2）
+git clone https://gitee.com/tinylab/cloud-lab.git
 ```
 
-在 bochs 运行编译好的内核：`./run`
+初始化并进入容器：
 
-汇编级调试：`./dbg-asm`，`help` 查看帮助
+```
+cd cloud-lab
+tools/docker/run linux-0.11-lab
+```
 
-C 语言级调试：`./dbg-c` 然后 `./rungdb`
+修改软件源：
 
-访问 `hdc-0.11-new.img`：挂载 `sudo ./mount-hdc`，卸载 `sudo umount hdc`
+```
+vi /etc/apt/sources.list
+apt update
+```
+```
+deb http://mirrors.bfsu.edu.cn/ubuntu/ trusty main restricted universe multiverse
+deb http://mirrors.bfsu.edu.cn/ubuntu/ trusty-updates main restricted universe multiverse
+deb http://mirrors.bfsu.edu.cn/ubuntu/ trusty-backports main restricted universe multiverse
+deb http://mirrors.bfsu.edu.cn/ubuntu/ trusty-security main restricted universe multiverse
+```
 
-！`./run` 的时候不要挂载。
+Linux 0.11 源码位于 `/labs/linux-0.11-lab/0.11`。
+
+调试：
+
+```
+make start-fd
+```
