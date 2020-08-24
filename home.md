@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-24T10:25:10.477Z
+date: 2020-08-24T10:26:39.464Z
 tags: 
 editor: markdown
 ---
