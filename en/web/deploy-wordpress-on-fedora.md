@@ -2,7 +2,7 @@
 title: How to Deploy WordPress on a Fedora Server
 description: 
 published: true
-date: 2020-08-01T02:42:27.203Z
+date: 2020-08-24T10:17:41.282Z
 tags: web, guide, linux, fedora, wordpress, deploy
 editor: markdown
 ---
