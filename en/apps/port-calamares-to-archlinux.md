@@ -2,7 +2,7 @@
 title: How to Port Calamares to Arch Linux
 description: 
 published: true
-date: 2020-08-01T02:36:06.797Z
+date: 2020-08-24T10:16:54.522Z
 tags: python, archlinux, calamares, apps
 editor: markdown
 ---
