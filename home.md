@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-24T10:26:39.464Z
+date: 2020-08-24T11:15:49.909Z
 tags: 
 editor: markdown
 ---
@@ -20,6 +20,6 @@ editor: markdown
 
 要查看目录树，在电脑端视图下点击页面左上方的「浏览」按钮，在移动端先点左下角圆形按钮，呼出左侧菜单后操作同电脑端。
 
-自我介绍一下，我叫**容加林**（Bobby Rong），[华南师范大学](https://www.scnu.edu.cn/) 软件工程本科大二学生。作为安同开源社区和华南师范大学软件协会的成员，我一直期待与他人合作完成各项任务以实现共同目标。我对开源世界特别感兴趣，也特别享受贡献代码、臭虫修复、文档完善、国际化及本地化工作给我带来的乐趣。请随意浏览这个站点，欢迎您随时和我交流 Linux、软件、编程和算法，也欢迎您关注本蒟蒻的 GitHub 和 Codeforces 帐号。
+自我介绍一下，我叫**容加林**（Bobby Rong），华南师范大学软件工程本科大二学生。作为安同开源社区和华南师范大学软件协会的成员，我一直期待与他人合作完成各项任务以实现共同目标。我对开源世界特别感兴趣，也特别享受贡献代码、臭虫修复、文档完善、国际化及本地化工作给我带来的乐趣。请随意浏览这个站点，欢迎您随时和我交流 Linux、软件、编程和算法，也欢迎您关注本蒟蒻的 GitHub 和 Codeforces 帐号。
 
 [![](https://img.shields.io/badge/bobby285271-GitHub-green?logo=github&style=for-the-badge)](https://github.com/bobby285271) [![](https://cfrating.ihcr.top/?user=bobby285271)](https://codeforces.com/profile/bobby285271)
