@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2020-08-24T11:54:57.678Z
+date: 2020-08-24T11:55:14.023Z
 tags: 
 editor: markdown
 ---
@@ -17,7 +17,7 @@ editor: markdown
 </center>
 
 
-## Dasyatis - Bobby Rong 的个人博客
+## Bobby Rong 的个人博客
 
 你可能已经留意到，你面前的是一个使用 Wiki.js 驱动的个人博客。为什么要在维基系统上写博客呢？首先博主是希望淡化博客的时间线的，理想情况下所有文章应该得到持续的维护，在任何时候访问都应该是不过时的。其实呢，博主认为维基可以更好地管理和组织零散的内容，例如题解。要访问一篇文章，你可以使用目录树（点击测栏「浏览」按钮即可显示）也可使用搜索功能。
 
