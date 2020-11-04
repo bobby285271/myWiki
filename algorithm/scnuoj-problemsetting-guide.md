@@ -2,7 +2,7 @@
 title: SCNUOJ Problemsetting Guide
 description: 
 published: true
-date: 2020-11-04T14:50:57.610Z
+date: 2020-11-04T14:56:15.693Z
 tags: scnuoj, problemsetting
 editor: markdown
 ---
@@ -295,6 +295,12 @@ SCNUOJ 目前有两套造题系统，Polygon System（对所有人开放）和�
 输出一行，包含 $n$ 个用空格间隔的整数，表示你构造的一组方案。
 
 如果有多组答案，输出任意一组。
+
+```
+输出一行，包含 $n$ 个用空格间隔的整数，表示你构造的一组方案。
+
+如果有多组答案，输出任意一组。
+```
 
 > 通解可能是唯一的，但只要对于任一测试点有多个可以满足题意的答案就必须写 Special Judge。
 {.is-warning}
