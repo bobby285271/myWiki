@@ -2,12 +2,12 @@
 title: SCNUOJ Problemsetting Guide
 description: 
 published: true
-date: 2020-11-04T14:00:02.742Z
+date: 2020-11-04T14:33:11.667Z
 tags: scnuoj, problemsetting
 editor: markdown
 ---
 
-> 本文为华南师范大学软件学院在线判题系统 SCNUOJ 出题指南（助教版）。下面的内容糅杂了编者的一些个人观点，故仅供参考。编写本文时参考到了 OI Wiki 的相关内容。
+> 本文为华南师范大学软件学院在线判题系统 SCNUOJ 出题指南（助教版）。下面的内容糅杂了 RJL 的一些个人观点，故仅供参考。编写本文时参考到了 OI Wiki 的相关内容，对相关内容的作者表示感谢。本文在 CC BY-SA 4.0 下发布。
 {.is-info}
 
 ## SCNUOJ 判题原理
@@ -47,7 +47,7 @@ g++ -fno-asm -O2 -Wall -lm --static -std=c++14 -DONLINE_JUDGE -o Main Main.cc
 diff outfile.txt 1.out
 ```
 
-对于 Special Judge 方式，情况则复杂一些，请查阅 https://oj.socoding.cn/wiki/spj ，我们会在后续章节进一步指导你如何编写 Special Judge 答案检查器。
+对于 Special Judge 方式，情况则复杂一些，请查阅 https://oj.socoding.cn/wiki/spj 。
 
 
 ## 出题前的准备
@@ -179,7 +179,7 @@ SCNUOJ 目前有两套造题系统，Polygon System（对所有人开放）和�
 一鸣师姐一下子就写出来了，聪明的你又能否做到呢？
 ```
 
-两个自然段之间必须添加一个空行，公式两边使用 `$$` 括起来。
+**两个自然段之间必须添加一个空行**，公式两边使用 `$$` 括起来。
 
 有关如何使用 Latex 写公式请上网搜索，也有大量在线 Latex 公式编辑器可供使用。
 
@@ -313,3 +313,73 @@ SCNUOJ 目前有两套造题系统，Polygon System（对所有人开放）和�
 - 必须包括各种各样的数据，而且应该有各种各样的达到最小数据范围的数据和达到最大数据范围的数据。
 - 测试数据不应完全依赖于程序随机生成，最好人为考虑各种不同的情况，针对各种情况出数据，确保暴力和假算法无法通过。
 
+> https://oj.socoding.cn/wiki/problem 提供了一些补充信息。
+{.is-info}
+
+关于如何快速生成数据，可以参考上面链接中提供的示例，下面额外补充一例：
+
+输入包含两行。
+
+第一行包含一个整数 $n \ (1 \leq n \leq 10^4)$，表示序列的长度。
+
+第二行包含 $n$ 个用空格间隔的整数 $a_1,a_2,a_3,\cdots,a_n \ (1 \leq a_i \leq 10^4)$，表示序列。
+
+```
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+    srand((unsigned)time(NULL));
+    for (int test = 1; test <= 50; test++)
+    {
+        char name[100];
+        sprintf(name, "%d.in", test);
+        FILE *fp = fopen(name, "w");
+        int a = rand() % 10000 + 1;
+        fprintf(fp, "%d\n", a);
+        a--;
+        while (a--)
+        {
+            int c = rand() % 10000 + 1;
+            fprintf(fp, "%d ", c);
+        }
+        int c = rand() % 10000 + 1;
+        fprintf(fp, "%d\n", c);
+        fclose(fp);
+    }
+    return 0;
+}
+```
+
+### Special Judge
+
+Special Judge 是当一道题有多组解时，用来判断答案合法性的程序。
+
+请参考 https://oj.socoding.cn/wiki/spj 提供的用法和示例学习 Testlib 并完成 Special Judge 的编写。
+
+* Testlib 官方网站 https://codeforces.com/testlib
+* Testlib 代码仓库 https://github.com/MikeMirzayanov/testlib
+
+即使旧版 OJ 的 Special Judge 编写规则依然适用于新 OJ，但为了避免 Judgment Failed，在新 OJ 必须使用 Testlib。
+
+请尽可能避免使用 `while (!ans.eof())` 的用法，除非你的输出数据文件足够规范，即行末没有任何空行。
+
+由于用户输出多余内容或者过少内容均会被 Testlib 判为答案错误，如果输出要求用户输出 $n$ 个实数，那么在判定一份正确的输出时应当恰好调用 $n$ 次 `ouf.readDouble()`，不能说因为读取第 $1$ 个数就已经知道这份输出一定正确就提前 `quitf()`。当然对于错误的用户输出可以随时 `quitf()`。
+
+## 发布题目
+
+在完成造题（如果在 Polygon System 完成造题后要先完成同步）之后，即可直接在小组作业或比赛中添加造好的题目。
+
+- 顶部导航栏 - 后台 - 侧栏 - 问题。
+- 找到自己的题目，记下题号。
+- 顶部导航栏 - 小组 - 找到自己管理的小组。
+- 作业 - 创建。
+- 填写作业信息 - 提交。
+- 进入你刚刚创建的比赛 - 设置。
+- 问题列表 - 添加问题 - 填入题号。
+
+> 有关赛制的选择，请查看 https://oj.socoding.cn/wiki/contest 。通常是作业赛制（允许学生看测试点）和 ICPC 赛制（不允许看数据）二选一，如果需要用到其它赛制，请先联系任一香农先修班负责人重启判题机并为 OJ 开启 OI 模式。
+{.is-info}
+
+
+要统计学生完成情况，直接保存公共榜单即可，公共榜单现已默认显示学生填写的学号。
