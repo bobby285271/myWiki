@@ -2,7 +2,7 @@
 title: SCNUOJ Problemsetting Guide
 description: 
 published: true
-date: 2020-11-04T14:33:11.667Z
+date: 2020-11-04T14:39:27.087Z
 tags: scnuoj, problemsetting
 editor: markdown
 ---
@@ -41,7 +41,7 @@ g++ -fno-asm -O2 -Wall -lm --static -std=c++14 -DONLINE_JUDGE -o Main Main.cc
 
 `outfile.txt` 就是接下来评判代码是否正确的依据。
 
-对于文本比较方式，SCNUOJ 会直接将选手的输出 `outfile.txt` 和标准答案 `*.out` 比较。形象一点，对于测试点一， SCNUOJ 就相当与在 Linux 系统下执行：
+对于文本比较方式，SCNUOJ 会直接将选手的输出 `outfile.txt` 和标准答案 `*.out` 比较。形象一点，对于测试点一， SCNUOJ 就相当于在 Linux 系统下执行：
 
 ```
 diff outfile.txt 1.out
