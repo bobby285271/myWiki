@@ -2,7 +2,7 @@
 title: SCNUOJ Problemsetting Guide
 description: 
 published: true
-date: 2020-11-04T11:16:04.161Z
+date: 2020-11-04T11:59:49.829Z
 tags: scnuoj, problemsetting
 editor: markdown
 ---
@@ -31,12 +31,23 @@ g++ -fno-asm -O2 -Wall -lm --static -std=c++14 -DONLINE_JUDGE -o Main Main.cc
 > 编译时使用的参数在 https://oj.socoding.cn/wiki/index 有说明。
 {.is-info}
 
-编译结束后会得到一个 `Main` 可执行文件。由于我们在上传题目的时候提供了若干组测试数据，也就是 `1.in`、`1.out` 这样的纯文本文件。SCNUOJ 就会利用这些文件测试这个可执行文件：
+编译结束后会得到一个 `Main` 可执行文件。由于我们在上传题目的时候提供了若干组测试数据，也就是 `1.in`、`1.out` 这样的纯文本文件。SCNUOJ 就会利用这些文件测试这个可执行文件，具体来说就是将 `*.in` 作为标准输入，然后捕获并储存 `Main` 的标准输出。
 
-### 文本比较
+形象一点，对于测试点一，SCNUOJ 就相当与在 Linux 系统下执行：
 
-关于 Special Judge 是什么请查阅 https://oj.socoding.cn/wiki/spj
+```
+(./Main < 1.in) > outfile.txt
+```
 
+`outfile.txt` 就是接下来评判代码是否正确的依据。
+
+对于文本比较方式，SCNUOJ 会直接将选手的输出 `outfile.txt` 和标准答案 `*.out` 比较。形象一点，对于测试点一， SCNUOJ 就相当与在 Linux 系统下执行：
+
+```
+diff outfile.txt 1.out
+```
+
+对于 Special Judge 方式，情况则复杂一些，请查阅 https://oj.socoding.cn/wiki/spj ，我们会在后续章节进一步指导你如何编写 Special Judge 答案检查器。
 
 
 ## 出题前的准备
@@ -52,7 +63,8 @@ g++ -fno-asm -O2 -Wall -lm --static -std=c++14 -DONLINE_JUDGE -o Main Main.cc
 
 ## 题目准备
 
-### 造题系统概览
+### 造题系统
+
 SCNUOJ 目前有两套造题系统，Polygon System（对所有人开放）和管理员后台自带的造题系统（对管理员和助教开放）。**所有题目都需要在这两套造题系统中准备。** 两者各有优缺点，使用起来都非常容易上手，大家目前可以根据自己的需要进行选择，我们会在后期逐步合并两个造题系统的功能。
 
 - Polygon System https://oj.socoding.cn/polygon
@@ -71,10 +83,55 @@ SCNUOJ 目前有两套造题系统，Polygon System（对所有人开放）和�
 
 在完成造题（如果在 Polygon System 完成造题后要先完成同步）之后，即可直接在小组作业或比赛中添加造好的题目。如果你希望将题目添加到公共题库（特指 https://oj.socoding.cn/problem/index 能看到的题目）或者添加到公共比赛（特指 https://oj.socoding.cn/contest/index 能看到的比赛），请联系任意任一香农先修班负责人。
 
-### Polygon System 使用流程
+#### Polygon System 使用流程
+
+造题：
 
 - 在 https://oj.socoding.cn/ 注册一个账户并登录。
-- 顶部导航栏 - 
+- 顶部导航栏 - 后台 - 侧栏 - Polygon System。
+- 创建题目。
+- 填写标题 - 创建。
+- 编辑 - 填写上面的栏目（下文有指导）- 保存。
+- 解决方案 - 上传解决方案 - 保存。
+- （如果启用了 Special Judge）Special Judge - 填写特判程序 - 保存。
+- 测试数据 - 只需要上传输入文件，即 `*.in` - 开始上传 - 运行 - 等候输出文件自动生成。
+
+同步到管理员后台自带的造题系统：
+
+- 顶部导航栏 - 后台 - 侧栏 - 问题。
+- Polygon 题目。
+- 填写 Polygon 题目 ID - 提交。
+- 从问题列表找到自己的题目，点击进入。
+- （可选）编辑 - 补充来源 - 保存。
+- （如果启用了 Special Judge）SPJ - 提交。
+
+> Polygon System 不会编译你上传的 SPJ 程序，但是管理员后台自带的造题系统在点击 SPJ 栏目的提交按钮后会编译你提供的 SPJ 程序并保存，判题时会直接使用这个编译好的程序。所以一定要到管理员后台自带的造题系统手动点一下提交。否则学生的代码将无法被正常评判。
+{.is-warning}
+
+更新题目：
+
+- 顶部导航栏 - 后台 - 侧栏 - Polygon System。
+- 从问题列表找到自己的题目，点击进入。
+- 参考造题一节更新题目并保存。
+- 顶部导航栏 - 后台 - 侧栏 - 问题。
+- Polygon 题目。
+- 填写 Polygon 题目 ID - 提交。
+- 从问题列表找到自己的题目，点击进入。
+- （如果启用了 Special Judge）SPJ - 提交。
+
+> 事实上就是重新导入这道题目，但公共题库的题目无需删除，重新导入会自动覆盖管理员后台自带造题系统对应的题目。对于在 Polygon System 创建的题目，尽量在 Polygon System 编辑题目后重新导入，而不是在管理员后台自带的造题系统直接编辑。后续版本的 SCNUOJ 会添加合适的逻辑减少操作量。
+{.is-info}
+
+> Polygon System 不支持 Special Judge 题目的验题，这意味着 Polygon System 只可以对文本比较型题目作验题，而管理员后台自带造题系统可以对两类题目做验题，后面会介绍如何在管理员后台自带造题系统验题。
+{.is-info}
+
+> 如果你的题目为 Special Judge 评测方式，无论是否改动特判程序，都请重新编译该程序。
+{.is-warning}
+
+
+#### 管理员后台自带的造题系统使用流程
+
+
 
 ### 题目内容
 在 SCNUOJ 上布置的题目，主要目的应当是培养程序设计思维，让学生在见到程序设计类题目时可以有具体的实现想法，能将题面转化为逻辑化的程序语言，次之才是语法学习：例如题目是读入两个数后比较它们的大小，学生应该能马上意识到要声明两个变量，将读入的数字保存到变量，用分支语句比较两个变量的值，输出结果；鼓励在满足时空要求的前提下让学生做到一题多解，除非是希望学生刻意学习、刻意练习，非必要情况下不应当在语法上做过多限制，例如只能利用指针进行某个操作、必须声明一个什么函数等等。
