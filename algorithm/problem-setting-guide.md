@@ -2,7 +2,7 @@
 title: SCNUOJ Problemsetting Guide
 description: 
 published: true
-date: 2020-11-04T12:07:38.138Z
+date: 2020-11-04T12:09:47.791Z
 tags: scnuoj, problemsetting
 editor: markdown
 ---
