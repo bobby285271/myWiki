@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2021-02-08T08:36:01.211Z
+date: 2021-02-08T08:44:34.723Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-01T13:07:00.751Z
@@ -30,4 +30,4 @@ dateCreated: 2021-01-01T13:07:00.751Z
 
 个人博客与知识库，不定时更新，内容与 [bobby285271/wiki](https://github.com/bobby285271/wiki) 每五分钟双向同步一次。
 
-如果你从 rjl931189261.fedorapeople.org 被重定向到此页，欢迎收藏当前网址。
+如果你是在访问 rjl931189261.fedorapeople.org 时被重定向到此页的，欢迎收藏当前网址。
