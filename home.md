@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2021-02-08T08:28:36.374Z
+date: 2021-02-08T08:36:01.211Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-01T13:07:00.751Z
@@ -17,7 +17,7 @@ dateCreated: 2021-01-01T13:07:00.751Z
 
 </center>
 
-要访问一篇文章，你可以使用目录树（点击测栏「浏览」按钮即可显示）也可使用搜索功能。
+要访问一篇文章，你可以使用目录树（点击测栏浏览按钮即可显示）也可使用搜索功能。
 
 ## 关于我
 
