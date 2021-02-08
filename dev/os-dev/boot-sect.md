@@ -2,7 +2,7 @@
 title: Boot Sector Programming (in 16-bit Real Mode)
 description: 
 published: true
-date: 2021-02-08T14:25:29.482Z
+date: 2021-02-08T14:49:20.134Z
 tags: os, boot, boot-sect, assembly
 editor: markdown
 dateCreated: 2021-02-08T14:25:29.482Z
@@ -98,6 +98,8 @@ dw 0xaa55
 
 > Set the base of the stack a little above where BIOS loads our boot sector - so it won’t overwrite us.
 
+具体看图 3-4：https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf#figure.3.4
+
 ```
 mov ah, 0x0e ;tele-type mode
 
@@ -143,4 +145,51 @@ a.pop();
 cout << b;
 
 cout << a.top();
+```
+
+## 分支
+
+```
+mov bx, 4
+
+cmp bx, 4
+jle printa ; if(bx <= 4) goto printa
+cmp bx, 40
+jl printb ; if(bx < 40) goto printb
+mov al, 'C'
+jmp theend
+
+printa:
+mov al, 'A'
+jmp theend
+
+printb:
+mov al, 'B'
+jmp theend
+
+printc:
+mov al, 'C'
+
+theend:
+mov ah, 0x0e ;tele-type mode
+int 0x10
+
+jmp $ ; jump to current addr
+
+times 510-($-$$) db 0
+
+;magic number to make BIOS know this is a boot sector
+dw 0xaa55 
+```
+
+等效的代码：
+
+```
+if (bx <= 4) {
+		cout << ’A’;
+} else if (bx < 40) {
+		cout << ’B’;
+} else {
+		cout << ’C’;
+}
 ```
