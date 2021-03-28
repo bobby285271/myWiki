@@ -2,13 +2,13 @@
 title: Header Editor Config
 description: 
 published: true
-date: 2021-03-28T11:51:06.867Z
+date: 2021-03-28T11:51:23.795Z
 tags: firefox, google, header-editor
 editor: markdown
 dateCreated: 2021-03-28T11:51:06.867Z
 ---
 
-# Header Editor 插件配置
+## Header Editor 插件配置
 
 主要是在不使用国际互联网时填写 Google 的验证码（替换到 `recaptcha.net`）。
 
