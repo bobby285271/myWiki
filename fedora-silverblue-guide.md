@@ -2,7 +2,7 @@
 title: Fedora Silverblue Guide
 description: 
 published: true
-date: 2021-02-13T07:29:38.903Z
+date: 2021-03-28T11:28:50.459Z
 tags: guide, fedora, silverblue, ostree, rpm
 editor: markdown
 dateCreated: 2021-02-13T07:29:38.903Z
