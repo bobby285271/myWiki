@@ -2,7 +2,7 @@
 title: Home
 description: Life, Love, Linux
 published: true
-date: 2021-02-08T08:44:34.723Z
+date: 2021-04-08T16:01:06.004Z
 tags: 
 editor: markdown
 dateCreated: 2021-01-01T13:07:00.751Z
@@ -23,7 +23,7 @@ dateCreated: 2021-01-01T13:07:00.751Z
 
 **容加林** Bobby Rong，华南师范大学软件工程本科 2023 届学生。
 
-常用 ID：bobby285271 ([GitHub](https://github.com/bobby285271/)), rjl931189261 (FAS)。
+常用 ID：bobby285271 ([GitHub](https://github.com/bobby285271/)), rjl931189261 ([FAS](https://accounts.fedoraproject.org/user/rjl931189261/))。
 常用 Email：[rjl931189261@126.com](mailto:rjl931189261@126.com), [admin@bobby285271.top](mailto:dmin@bobby285271.top), [bobbyrong@aosc.io](mailto:bobbyrong@aosc.io)。
 
 ## 关于此站点
