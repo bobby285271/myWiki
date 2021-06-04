@@ -2,7 +2,7 @@
 title: Fedora Silverblue Guide
 description: 
 published: true
-date: 2021-03-28T11:28:50.459Z
+date: 2021-06-04T04:19:58.771Z
 tags: guide, fedora, silverblue, ostree, rpm
 editor: markdown
 dateCreated: 2021-02-13T07:29:38.903Z
@@ -73,4 +73,11 @@ toolbox enter
 
 ```
 rpm-ostree upgrade
+```
+
+## GRUB 选单重复
+
+```
+sudo grub2-switch-to-blscfg
+sudo grub2-mkconfig -o /boot/efi/EFI/fedora/grub.cfg
 ```
